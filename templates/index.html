@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Eyeglass Classifier</title>
+    <link rel="stylesheet" href="./static/stylesheet.css">
+</head>
+<body>
+    <header>   
+        <a class="header-logo" href="#">Eyeglass Classifier</a>
+    </header>
+
+    <div class="main">    
+        <h2> AIが送信された画像の眼鏡の有無を判別します</h2>
+        <p>画像を送信してください</p>
+        <form method="POST" enctype="multipart/form-data">
+            <input class="file_choose" type="file" name="file">
+            <input class="btn" value="Submit!" type="submit">
+        </form>
+
+        {% if image_url %}
+        <div class="uploaded-image">
+            <img src="{{ image_url }}" alt="Uploaded Image">
+        </div>
+        {% endif %}
+
+        <div class="result {% if not answer %}hidden{% endif %}">
+            <div class="answer">判定: {{answer}}</div>
+            <div class="score">Confidenceスコア: {{ score }}</div>
+        </div>
+
+    </div>
+
+    <footer>
+        <small>&copy; 2024 YoTakada</small>   
+    </footer>
+</body>
+</html>

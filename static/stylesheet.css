@@ -1,0 +1,97 @@
+header {
+    background-color: #76B55B;
+    height: 60px;
+    margin: -8px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start; 
+    align-items: center;
+    padding-left: 10px;
+}
+
+.header-logo {
+    color: #fff;
+    font-size: 25px;
+    margin: 15px 25px;
+}
+
+.header_img {
+    height: 25px;
+    margin: 15px 25px;
+}
+
+.main {
+    height: auto; /* メインコンテンツの高さを自動に */
+    padding: 20px; /* 全体にパディングを追加 */
+    text-align: center; /* テキストを中央揃え */
+}
+
+h2 {
+    color: #333333; /* テキスト色を少し暗く */
+    margin: 40px 0px; /* マージンを調整 */
+    font-size: 24px; /* フォントサイズを少し大きく */
+}
+
+p {
+    color: #555555; /* テキスト色を少し暗く */
+    margin: 20px 0px 20px 0px; /* マージンを調整 */
+    font-size: 18px; /* フォントサイズを調整 */
+}
+
+.answer {
+    color: #000000; /* 結果表示の色を黒に */
+    margin: 30px 0px 20px 0px; /* マージンを調整 */
+    font-size: 22px; /* フォントサイズを調整 */
+}
+
+.uploaded-image {
+    text-align: center;
+    margin: 20px 0px;
+}
+
+.uploaded-image img {
+    max-width: 300px; /* 画像の最大幅を指定 */
+    height: auto; /* 縦横比を維持 */
+    border: 2px solid #5A9448; /* 枠線を追加 */
+    border-radius: 5px; /* 角を少し丸める */
+}
+
+.score {
+    color: #333333;
+    margin: 20px 0px 30px 0px;
+    text-align: center;
+    font-size: 20px; /* フォントサイズを適宜調整 */
+}
+
+.hidden {
+    visibility: hidden; /* 非表示にするが、スペースは確保する */
+    height: 60px; /* 高さを指定してスペースを確保 */
+}
+
+.result {
+    margin-top: 20px;
+    text-align: center;
+}
+
+form {
+    text-align: center;
+}
+
+footer {
+    background-color: #F7F7F7;
+    height: 110px;
+    margin: -8px;
+    position: relative;
+}
+
+.footer_img {
+    height: 25px;
+    margin: 15px 25px;
+}
+
+small {
+    margin: 15px 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
